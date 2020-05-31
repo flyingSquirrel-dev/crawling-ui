@@ -17,15 +17,21 @@ export const StyledBoardTitle = styled.div`
     line-height: 18px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: ${({ theme }) => theme.dashBoard.titleBackGroundColor};
-    color: ${({ theme }) => theme.dashBoard.titleColor};
+    background-color: ${({ theme }) => theme.crawlingSettingDashBoard.titleBackGroundColor};
+    color: ${({ theme }) => theme.crawlingSettingDashBoard.titleColor};
     font-weight: bold;
     font-size: 14px;
-    &:first-child {
+    &:nth-child(1) {
       text-align: left;
     }
-    &:last-child {
+    &:nth-child(2) {
       text-align: right;
+    }
+    &:nth-child(3) {
+      width: 200px;
+      text-align: center;
+      background-color: ${({ theme }) => theme.crawlingSettingDashBoard.modifyTabBackGroundColor};
+      color: ${({ theme }) => theme.crawlingSettingDashBoard.modifyTabColor};
     }
   }
 `;
@@ -34,10 +40,10 @@ export const StyledDefaultBoardContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 600px;
+  width: 800px;
   padding: 27px 0;
-  background-color: ${({ theme }) => theme.dashBoard.defaultContentBackGroundColor};
-  color: ${({ theme }) => theme.dashBoard.defaultContentFontColor};
+  background-color: ${({ theme }) => theme.crawlingSettingDashBoard.defaultContentBackGroundColor};
+  color: ${({ theme }) => theme.crawlingSettingDashBoard.defaultContentFontColor};
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 `;

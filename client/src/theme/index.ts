@@ -16,6 +16,14 @@ export type Theme = {
     defaultContentBackGroundColor: string;
     defaultContentFontColor: string;
   };
+  crawlingSettingDashBoard: {
+    titleBackGroundColor: string;
+    titleColor: string;
+    defaultContentBackGroundColor: string;
+    defaultContentFontColor: string;
+    modifyTabBackGroundColor: string;
+    modifyTabColor: string;
+  };
 };
 
 export const lightTheme: Theme = {
@@ -34,6 +42,14 @@ export const lightTheme: Theme = {
     defaultContentBackGroundColor: '#fff',
     defaultContentFontColor: '#aaa',
   },
+  crawlingSettingDashBoard: {
+    titleBackGroundColor: '#ccc',
+    titleColor: '#999',
+    defaultContentBackGroundColor: '#fff',
+    defaultContentFontColor: '#aaa',
+    modifyTabBackGroundColor: '#999',
+    modifyTabColor: '#fff',
+  },
 };
 
 export const darkTheme: Theme = {
@@ -51,6 +67,14 @@ export const darkTheme: Theme = {
     titleColor: '#999',
     defaultContentBackGroundColor: '#999',
     defaultContentFontColor: '#555',
+  },
+  crawlingSettingDashBoard: {
+    titleBackGroundColor: '#393E46',
+    titleColor: '#999',
+    defaultContentBackGroundColor: '#999',
+    defaultContentFontColor: '#555',
+    modifyTabBackGroundColor: '#1F242B',
+    modifyTabColor: '#ccc',
   },
 };
 
