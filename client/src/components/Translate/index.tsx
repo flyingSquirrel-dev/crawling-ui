@@ -38,7 +38,8 @@ const TranslateComponent = () => {
           </>
         ) : (
           <li>
-            <Lang>{i18n.language === 'ko' ? 'KOR' : 'ENG'}</Lang>
+            {/* TODO: UI 변경에 따라서 언어부분 어떻게 처리되는지 확인 필요 */}
+            {/*<Lang>{i18n.language === 'ko' ? 'KOR' : 'ENG'}</Lang>*/}
           </li>
         )}
       </LangWrap>

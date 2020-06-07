@@ -9,6 +9,7 @@ const CrawlingSettings = lazy(() =>
 const DatabaseSettings = lazy(() =>
   import(/* webpackChunkName: "DatabaseSettings" */ '~/pages/Settings/DatabaseSettings'),
 );
+const UserSettings = lazy(() => import(/* webpackChunkName: "UserSettings" */ '~/pages/Settings/UserSettings'));
 
 type RoutesArguments = {
   path: string;
@@ -53,5 +54,9 @@ export const AuthRoutes: RoutesArguments[] = [
   {
     path: '/database/settings',
     component: DatabaseSettings,
+  },
+  {
+    path: '/user/settings',
+    component: UserSettings,
   },
 ];
