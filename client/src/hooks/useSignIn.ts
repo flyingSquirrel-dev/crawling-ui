@@ -59,6 +59,7 @@ function useSignIn(): TypeSignIn {
         localStorage.setItem('auth', data.token);
         rematch.user.changeUser({
           isLogged: true,
+          userIdx: data.idx,
           username: data.name,
         });
       } else {

@@ -3,12 +3,14 @@ import { produce, Draft } from 'immer';
 
 export type userState = {
   username: string;
+  userIdx: number | string;
   isLogged: boolean;
   [propName: string]: any;
 };
 
 const initialState: Partial<userState> = {
   username: '',
+  userIdx: '',
   isLogged: false,
 };
 
